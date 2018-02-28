@@ -13,8 +13,6 @@ before_install:
   - pip install hererocks
   - hererocks lua_install --$LUA
   - export PATH=$PATH:$PWD/lua_install/bin
-
-install:
   - luarocks install kong 0.11.2-0
   - luarocks install luaunit
   - luarocks install --server=http://luarocks.org/dev luaffi
