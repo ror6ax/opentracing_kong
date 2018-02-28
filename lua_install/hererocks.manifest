@@ -1,0 +1,1 @@
+{"version": 3, "LuaJIT": {"compat": "default", "name": "LuaJIT", "major version": "5.1", "c flags": "", "source": "release", "version": "2.0.5", "location": "/home/ror6ax/Development/opentracing_kong/lua_install", "target": "linux"}}
