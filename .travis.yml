@@ -15,7 +15,7 @@ before_install:
   - cmake ..
   - make
   - cd ../../
-  - cp pentracing-cpp/.build/libopentracing.so .
+  - cp opentracing-cpp/.build/libopentracing.so .
   - pip install hererocks
   - hererocks env --$LUA --luarocks latest
   - source env/bin/activate   
