@@ -12,7 +12,7 @@ function OtKong:new()
   typedef struct Config Config;
   auto load_config = opentracing::DynamicallyLoadTracingLibrary(char*);
   ]]
-  ffi.C.load_config("\"sampler\": {\"type\": \"const\",\"param\": 1,},\"logging\": True")
+  -- ffi.C.load_config("\"sampler\": {\"type\": \"const\",\"param\": 1,},\"logging\": True")
 end
 
 function OtKong:access(conf)
