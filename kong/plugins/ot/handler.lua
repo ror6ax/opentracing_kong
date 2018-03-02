@@ -7,7 +7,7 @@ local OtKong = BasePlugin:extend()
 
 function OtKong:new()
   KongInjection.super.new(self, "otkong")
-  ffi.include "opentracing/dynamic_load.h"
+  ffi.include "../../../opentracing-cpp/include/opentracing/dynamic_load.h"
   ffi.cdef[[
   typedef struct Config Config;
   auto load_config = opentracing::DynamicallyLoadTracingLibrary(char*);
