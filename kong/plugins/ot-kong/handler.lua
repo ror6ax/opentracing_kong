@@ -2,7 +2,6 @@ local BasePlugin = require "kong.plugins.base_plugin"
 local OtKong = BasePlugin:extend()
 local ffi = require "ffi"
 local lib = ffi.load "./libopentracing.so"
-local access = require "kong.plugins.ot-kong.access"
 
 function OtKong:new()
   KongInjection.super.new(self, "otkong")
@@ -12,8 +11,4 @@ function OtKong:new()
   auto load_config = opentracing::DynamicallyLoadTracingLibrary(char*);
   ]]
   -- ffi.C.load_config("\"sampler\": {\"type\": \"const\",\"param\": 1,},\"logging\": True")
-end
-
-function OtKong:access(conf)
-	local foo = "bar"
 end
