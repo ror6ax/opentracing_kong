@@ -16,6 +16,5 @@ function OtKong:new()
 end
 
 function OtKong:access(conf)
-  OtKong.super.access(self)
-  access.execute(conf)
+	local foo = "bar"
 end
