@@ -1,7 +1,7 @@
 local ffi = require "ffi"
 local lib = ffi.load "./libopentracing.so"
 
-local access = require "kong.plugins.ot.access"
+local access = require "kong.plugins.ot-kong.access"
 
 local OtKong = BasePlugin:extend()
 
