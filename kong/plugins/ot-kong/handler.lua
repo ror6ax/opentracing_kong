@@ -1,3 +1,4 @@
+local BasePlugin = require "kong.plugins.base_plugin"
 local ffi = require "ffi"
 local lib = ffi.load "./libopentracing.so"
 
