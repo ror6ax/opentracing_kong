@@ -1,10 +1,8 @@
 local BasePlugin = require "kong.plugins.base_plugin"
+local OtKong = BasePlugin:extend()
 local ffi = require "ffi"
 local lib = ffi.load "./libopentracing.so"
-
 local access = require "kong.plugins.ot-kong.access"
-
-local OtKong = BasePlugin:extend()
 
 function OtKong:new()
   KongInjection.super.new(self, "otkong")
