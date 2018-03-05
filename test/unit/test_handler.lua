@@ -1,4 +1,4 @@
-local filter = require("kong.plugins.ot.handler")
+local filter = require("kong.plugins.ot-kong.handler")
 local lu = require("luaunit")
 
 TestHandler = require("test.unit.base_case"):extend()
